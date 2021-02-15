@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="@dimen/_165sdp"
+    android:layout_gravity="center"
+    android:paddingTop="@dimen/_20sdp"
+    android:layout_marginLeft="@dimen/_43sdp"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_16sdp"
+    android:layout_height="wrap_content">
+
+     <RelativeLayout
+         android:id="@+id/bb"
+        android:layout_below="@+id/ivProductImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_121sdp"
+        android:layout_marginTop="-49dp"
+        android:background="@drawable/product_shape"
+      >
+         <TextView
+             android:id="@+id/TV_Plant_Price"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tvProductName"
+             android:text="$30"
+              android:layout_alignParentRight="true"
+             android:layout_alignRight="@id/TV_Plant_Type"
+             android:textColor="@color/white"
+             android:layout_marginTop="@dimen/_4sdp"
+             android:layout_marginRight="@dimen/_4sdp"
+             android:textSize="@dimen/_13sdp" />
+         <ImageView
+             android:id="@+id/iv_favourite_star"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:layout_marginTop="@dimen/_6sdp"
+             android:layout_marginRight="@dimen/_6sdp"
+             android:background="@drawable/star"
+              android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+             android:textSize="@dimen/_14sdp" />
+
+
+        <TextView
+            android:id="@+id/TV_Plant_Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/_9sdp"
+            android:alpha="0.4"
+            android:layout_marginLeft="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_below="@+id/tvProductName"
+         />
+
+
+
+         <androidx.appcompat.widget.AppCompatButton
+             android:id="@+id/btn_AddToCart"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_38sdp"
+     android:layout_below="@+id/TV_Plant_Type"
+      android:text="@string/view_details"
+    android:drawableRight="@drawable/shopping_cart"
+     android:layout_marginTop="@dimen/_17sdp"
+     android:textColor="@color/white"
+             android:textAllCaps="false"
+    android:textSize="@dimen/_10sdp"
+    android:background="@drawable/swipe_btn"
+    >
+
+</androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
+    <ImageView
+        android:id="@+id/ivProductImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    </RelativeLayout>

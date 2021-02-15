@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCartActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="match_parent"
+        android:src="@drawable/rectangle">
+
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/Ibtn_backarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/ic_baseline_arrow_back_black_24"/>
+    <ImageView
+        android:id="@+id/IV_congratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/_130sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/_30sdp"
+        android:src="@drawable/success">
+
+    </ImageView>
+
+    <TextView
+    android:id="@+id/TV_congratulations"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/congratulations"
+    android:textColor="@color/light_green"
+    android:textSize="@dimen/_20sdp"
+android:layout_centerHorizontal="true"
+    android:layout_marginLeft="@dimen/_66sdp"
+    android:layout_marginRight="@dimen/_46sdp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_36sdp"
+     android:layout_below="@+id/IV_congratulations">
+
+</TextView>
+            <TextView
+                android:id="@+id/TV4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_order_placed_successfully_for_more_details_check_orders"
+                android:textColor="@color/font_color"
+                android:textSize="@dimen/_9sdp"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginLeft="@dimen/_58sdp"
+                android:paddingLeft="@dimen/_37sdp"
+                android:layout_marginRight="@dimen/_66sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/TV_congratulations"
+                >
+
+            </TextView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Done"
+                android:layout_width="@dimen/_169sdp"
+                android:layout_height="@dimen/_34sdp"
+                  android:background="@drawable/btn_shape"
+                android:text="Done"
+                android:textSize="@dimen/_16sdp"
+                android:textAllCaps="false"
+                  android:layout_marginLeft="@dimen/_88sdp"
+                android:layout_marginRight="@dimen/_66sdp"
+                android:layout_below="@+id/TV4"
+                android:layout_marginTop="@dimen/_16sdp"
+                 android:textColor="@color/white">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>

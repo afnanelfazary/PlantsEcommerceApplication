@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_26sdp">
+
+    <RelativeLayout
+        android:id="@+id/bb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:elevation="@dimen/_30sdp"
+        android:background="@color/white"
+
+        >
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:src="@drawable/success"
+            />
+
+
+         <TextView
+            android:id="@+id/tv_Constant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+             android:layout_marginLeft="@dimen/_6sdp"
+             android:text="@string/your_order_is_on_it_s_way"
+            android:layout_toEndOf="@+id/ivProductImage"
+            />
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_NotificationsCostantDescription"
+            android:layout_below="@+id/tv_Constant"
+            android:layout_toEndOf="@+id/ivProductImage"
+            android:text="@string/we_will_inform_you_as_soon_as_it_reaches_your_nearest_hub"
+            android:textSize="@dimen/_11sdp"
+             android:layout_marginRight="@dimen/_27sdp"
+             android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_11sdp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

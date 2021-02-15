@@ -1,0 +1,108 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_6sdp">
+
+    <RelativeLayout
+        android:id="@+id/bb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_AddressICon"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+               android:src="@drawable/ic_twotone_home_work_24"
+            />
+        <TextView
+            android:id="@+id/tv_Address"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_28sdp"
+            android:layout_toEndOf="@+id/iv_AddressICon"
+            android:textColor="@color/font_color"
+            android:alpha="0.8"
+             android:text="Calvin Reyold  91 Bellevue Dr.Gkebdale Heights, IL 60139"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit"
+            android:layout_alignParentRight="true"
+            android:alpha="0.4"
+            android:layout_marginRight="@dimen/_16sdp">
+        </ImageView>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_1sdp"
+              android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+             android:layout_toEndOf="@+id/iv_AddressICon"
+            android:layout_below="@+id/tv_Address"
+            android:alpha="0.3"
+            android:background="@color/grey"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/view"
+            android:layout_toEndOf="@+id/iv_AddressICon"
+             android:layout_marginTop="@dimen/_9sdp"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_8sdp">
+            <RadioButton
+                android:id="@+id/RB_btn"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                 android:gravity="center"
+                android:checked="false"
+                android:buttonTint="@color/light_green"
+                  />
+
+
+            <TextView
+                android:id="@+id/TV_addresstitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/RB_btn"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:text="@string/use_this_as_deliver_address"
+                 android:textSize="@dimen/_10sdp"
+                 android:layout_centerInParent="true"
+                android:textColor="@color/black"       />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_38sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_28sdp"
+        android:layout_below="@+id/bb"
+        android:background="@color/grey"
+        android:alpha="0.3"
+        />
+</RelativeLayout>

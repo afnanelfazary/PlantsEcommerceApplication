@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.plantsecommerceapplication">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/greenleaves"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/greenleaves"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PlantsEcommerceApplication">
+        <activity android:name=".OrdersActivity"></activity>
+        <!-- <activity android:name=".OnBoardingScreenActivity"></activity> -->
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".IntroActivity" />
+        <activity android:name=".ShoppingCartActivity" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".DrawerActivity"/>
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FinalReviewActivity" />
+        <activity android:name=".DeliverActivity" />
+        <activity android:name=".MyWishlistActivity" />
+        <activity android:name=".NotificationActivity" /> <!-- <activity android:name=".MyCartActivity" /> -->
+        <activity android:name=".DoneActivity" /> <!-- <activity android:name=".ProductDetailActivity" /> -->
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SigninActivity" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+
+</manifest>

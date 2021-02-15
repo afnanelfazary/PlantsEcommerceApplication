@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "680419329001",
+    "project_id": "plantsecommerceapplication",
+    "storage_bucket": "plantsecommerceapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680419329001:android:42dd5ed0e1c46cfb09c178",
+        "android_client_info": {
+          "package_name": "com.example.plantsecommerceapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680419329001-5thsevhissphrf2ap40j3c74o63o2236.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGXnT7dTVTBFd6rMXGqHU_TGmEpVGm928"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680419329001-5thsevhissphrf2ap40j3c74o63o2236.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

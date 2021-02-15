@@ -1,0 +1,118 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:elevation="@dimen/_16sdp"
+    android:layout_marginTop="@dimen/_26sdp">
+
+    <RelativeLayout
+        android:id="@+id/bb"
+         android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+         >
+        <ImageView
+            android:id="@+id/person_photo"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+             android:layout_margin="@dimen/_8sdp"
+               />
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+              android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_toEndOf="@+id/person_photo"
+            android:textColor="@color/font_color"
+             android:text="dnjvjckv nfcjn "
+            android:textSize="@dimen/_14sdp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="dfkmgdk"
+            android:layout_toEndOf="@+id/person_photo"
+            android:layout_below="@+id/person_name"
+            />
+        <TextView
+            android:id="@+id/TV_multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_below="@+id/person_name"
+            android:textColor="@color/font_color"
+            android:layout_toEndOf="@+id/tv_productPrice"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tv_productQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/person_name"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_toEndOf="@+id/TV_multiply"
+            android:text="1"
+            android:textStyle="bold"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/_15sdp" />
+<!--<RelativeLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="@dimen/_30sdp"-->
+<!--    android:layout_below="@+id/TV_multiply"-->
+<!--    android:layout_toEndOf="@+id/person_photo"-->
+<!--    android:background="@drawable/border"-->
+<!--    android:layout_marginTop="@dimen/_9sdp"-->
+<!--    android:paddingLeft="@dimen/_16sdp"-->
+<!--    android:paddingRight="@dimen/_16sdp"-->
+<!--     android:layout_marginLeft="@dimen/_8sdp">-->
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btn_decrease"-->
+<!--        android:layout_width="@dimen/_20sdp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--         android:layout_marginRight="@dimen/_6sdp"-->
+<!--        android:text="-"-->
+<!--        android:gravity="center"-->
+<!--        android:background="@color/transparent"-->
+<!--        android:textSize="@dimen/_20sdp"-->
+<!--        android:textColor="@color/black"-->
+<!--             />-->
+
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btn_increase"-->
+<!--        android:layout_width="@dimen/_20sdp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--          android:layout_toEndOf="@+id/btn_decrease"-->
+<!--        android:layout_marginLeft="@dimen/_6sdp"-->
+<!--        android:text="+"-->
+<!--        android:background="@color/transparent"-->
+<!--        android:textSize="@dimen/_17sdp"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/black"       />-->
+
+
+
+
+<!--</RelativeLayout>-->
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

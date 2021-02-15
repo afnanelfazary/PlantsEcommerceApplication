@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_blue"
+
+    android:layout_height="match_parent">
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+          android:orientation="vertical"
+    android:background="@color/light_blue"
+    tools:context=".ProductDetailActivity">
+
+        <RelativeLayout
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+             android:background="@color/light_green">
+            <ImageButton
+                android:id="@+id/Ibtn_backarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/_16sdp"
+                 android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+            <ImageView
+                android:id="@+id/IV_calendar"
+                android:background="@drawable/calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_76sdp"
+                android:layout_alignParentRight="true"
+
+                 />
+
+                <TextView
+                    android:id="@+id/TV_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="24"
+                    android:layout_alignParentRight="true"
+                     android:layout_marginTop="@dimen/_35sdp"
+                     android:layout_marginRight="@dimen/_50sdp"
+                    />
+
+            <ImageView
+                android:id="@+id/IV_Humidity"
+                android:background="@drawable/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_76sdp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/IV_calendar"
+                android:layout_marginTop="@dimen/_11sdp"
+
+                />
+
+            <TextView
+                android:id="@+id/TV_Humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:textSize="@dimen/_12sdp"
+                android:text="82%"
+                  android:layout_below="@id/TV_calendar" />
+            <ImageView
+                android:id="@+id/IV_Diameter"
+                android:background="@drawable/diameter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_76sdp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/IV_Humidity"
+                android:layout_marginTop="@dimen/_11sdp"
+
+                />
+
+            <TextView
+                android:id="@+id/TV_Diameter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                 android:textSize="@dimen/_12sdp"
+                android:text="4.2”"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_33sdp"
+                android:layout_marginRight="@dimen/_43sdp"
+                 android:layout_below="@id/TV_Humidity"
+                />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btn_AddToCart"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:background="@drawable/black_btn"
+    android:layout_below="@id/IV_Diameter"
+    android:text="Add To Cart"
+    android:textSize="@dimen/_16sdp"
+    android:textAllCaps="false"
+      android:textColor="@color/white"
+     android:gravity="center"
+     android:paddingLeft="@dimen/_56sdp"
+     android:layout_marginTop="@dimen/_52sdp"/>
+        </RelativeLayout>
+
+
+
+      <ImageView
+          android:id="@+id/ivProductImage"
+          android:layout_width="@dimen/_180sdp"
+          android:layout_height="@dimen/_200sdp"
+          android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-79dp"
+          android:layout_marginTop="-260dp" />
+<RelativeLayout
+    android:layout_below="@+id/b1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:layout_margin="@dimen/_16sdp"
+  >
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_color2"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_16sdp"
+         android:textSize="@dimen/_15sdp"
+        android:text="Vibrant Lily" />
+    <TextView
+        android:id="@+id/tvProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_color2"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_15sdp"
+         android:layout_alignParentRight="true"
+        android:text="$30" />
+
+    <TextView
+        android:id="@+id/tvProductType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_font_color"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_9sdp"
+        android:layout_below="@+id/tvProductName"
+        android:text="Indoor Plant" />
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_9sdp"
+         android:layout_below="@+id/tvProductType"
+        android:alpha="0.2"
+        android:background="@color/blue" />
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_color2"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14sdp"
+        android:layout_below="@+id/line"
+        android:text="All you need to know..." />
+    <TextView
+        android:id="@+id/tvProductDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_font_color"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_11sdp"
+        android:layout_below="@+id/TV1"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Ullamcorper cras primis dignissim maecenas consectetur nam condimentum eros a justo a mollis curae justo pharetra nisl scelerisque a aliquet justo ipsum a ante lobortis sodales varius nibh scelerisque. Mus est nec condimentum hac scelerisque parturient sociosqu a lobortis a porttitor risus dis parturient aliquam vel suscipit vel mus." />
+
+    <ImageView
+        android:id="@+id/IV_TimeTable"
+        android:background="@drawable/calendar1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110sdp"
+         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_below="@+id/tvProductDesc"
+         />
+
+
+
+
+</RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

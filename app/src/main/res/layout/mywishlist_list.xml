@@ -1,0 +1,71 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_26sdp">
+
+    <RelativeLayout
+        android:id="@+id/bb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_6sdp"
+            />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_toEndOf="@+id/ivProductImage"
+            android:textColor="@color/font_color"
+            android:textStyle="bold"
+            android:text="Product Name "
+            android:textSize="@dimen/_14sdp" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_deleteItem"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/delete"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:alpha="0.5"-->
+<!--            android:layout_marginRight="@dimen/_16sdp">-->
+<!--        </ImageView>-->
+
+        <TextView
+            android:id="@+id/tvUnitPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="dfkmgdk"
+            android:layout_toEndOf="@+id/ivProductImage"
+            android:layout_below="@+id/tvName"
+            />
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/btn_AddToCart"-->
+<!--                android:layout_width="@dimen/_95sdp"-->
+<!--                android:layout_height="@dimen/_30sdp"-->
+<!--                android:layout_marginLeft="@dimen/_8sdp"-->
+<!--                android:layout_marginTop="@dimen/_7sdp"-->
+<!--                android:text="Add Cart"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_toEndOf="@+id/ivProductImage"-->
+<!--                android:layout_below="@+id/tvUnitPrice"-->
+<!--                android:background="@drawable/btn_shape"-->
+<!--                 android:textAllCaps="false"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

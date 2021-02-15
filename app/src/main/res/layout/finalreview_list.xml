@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_83sdp"
+    android:layout_marginTop="@dimen/_4sdp">
+
+    <RelativeLayout
+        android:id="@+id/bb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/person_photo"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_height="@dimen/_60sdp"
+             />
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_toEndOf="@+id/person_photo"
+              android:layout_marginTop="@dimen/_26sdp"
+            android:textColor="@color/font_color"
+            android:textStyle="bold"
+            android:text="Product Name "
+            android:textSize="@dimen/_14sdp" />
+
+
+        <TextView
+            android:id="@+id/tv_productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:text="Total Price "
+           android:layout_toEndOf="@+id/person_photo"
+           android:layout_below="@+id/person_name"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/person_photo"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:alpha="0.2"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

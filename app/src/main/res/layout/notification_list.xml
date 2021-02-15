@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_26sdp">
+
+    <RelativeLayout
+        android:id="@+id/bb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:elevation="@dimen/_30sdp"
+        android:background="@color/white"
+
+        >
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_4sdp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:text="3"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/ivProductImage"
+            />
+        <TextView
+            android:id="@+id/tv_ConstantOfItemsQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:text="@string/items_of"
+            android:layout_toEndOf="@+id/tv_Quantity"
+            />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+              android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:text="Vibrant Lily"
+            android:layout_toEndOf="@+id/tv_ConstantOfItemsQuantity"
+             />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:id="@+id/tv_NotificationsCostantDescription"
+           android:layout_below="@+id/tvName"
+           android:layout_toEndOf="@+id/ivProductImage"
+           android:text=" has been added to your cart. Order before it gets out of stock!"
+           android:textSize="@dimen/_11sdp"
+           android:layout_marginRight="@dimen/_24sdp"
+           android:layout_marginTop="@dimen/_11sdp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

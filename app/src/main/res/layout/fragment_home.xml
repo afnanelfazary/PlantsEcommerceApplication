@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RL"
+    android:orientation="vertical"
+     android:layout_height="wrap_content"
+    tools:context=".HomeFragment">
+
+
+<ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-1dp"
+        android:src="@drawable/rectangle">
+
+    </ImageView>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/side_nav"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:background="@color/light_blue"
+        android:id="@+id/ib_SideNav"
+        >
+
+    </ImageButton>
+    <TextView
+        android:id="@+id/TV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:textColor="@color/font_color"
+        android:textSize="@dimen/_25sdp"
+
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/TV_title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tab1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:checked="true"
+                 android:padding="14dp"
+                android:textColor="@color/grey"
+                android:textOff="Recommended"
+                android:textSize="@dimen/_15sdp"
+                android:textAllCaps="false"
+                android:rotation="-90"
+                android:textOn="Recommended" />
+
+
+            <ToggleButton
+                android:id="@+id/tab2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:checked="false"
+                android:layout_marginTop="@dimen/_140sdp"
+                 android:rotation="-90"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/grey"
+                android:padding="4dp"
+                android:textAllCaps="false"
+                android:textOff="Outdoor"
+                android:textOn="Outdoor" />
+
+
+            <ToggleButton
+                android:id="@+id/tab3"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:checked="true"
+                 android:layout_marginTop="@dimen/_140sdp"
+                android:rotation="-90"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/grey"
+                android:padding="4dp"
+                android:textAllCaps="false"
+                android:textOff="Indoor"
+                android:textOn="Indoor" />
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/myViewFlipper"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:background="@color/light_green" />
+
+    </LinearLayout>
+
+</RelativeLayout>
